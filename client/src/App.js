@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import IndianContract from "./contracts/Indian.json";
+import IndianContract from "./../../build/contracts/Indian.json";
 import getWeb3 from "./utils/getWeb3";
 
 import "./App.css";
@@ -7,7 +7,7 @@ import "./App.css";
 class App extends Component {
   constructor(props) {
     super(props);
-    const IndianContract1 = require("/build/contracts/Indian.json");
+    const IndianContract1 = require("./../../build/contracts/Indian.json");
     this.state = {
       indianInstance: null,
       myAccount: null,
